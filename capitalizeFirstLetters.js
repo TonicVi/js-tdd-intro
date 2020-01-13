@@ -1,36 +1,11 @@
 const assert = require("assert");
 
 function capitalizeFirstLetters(input) {
+    return input
+    .split(' ')
+    .map( w =>  w.substring(0,1).toUpperCase()+ w.substring(1))
+    .join(' ')
 }
-  // let output = "";
-  // let words = input.split(" ");
-  // console.log(words);
-  // if (words.length === 1) {
-  //   for (let i = 0; i < input.length; i++) {
-  //     if (i === 0) {
-  //       output += input[0].toUpperCase();
-  //     } else {
-  //       output += input[i];
-  //     }
-  //   }
-  //   return output;
-  // } else if (words.length > 1) {
-  //   for (let i = 0; i < words[i].length; i++) {
-  //     console.log(words[i].length)
-  //     for (let j = 0; j < words[i][j].length; j++) {
-  //       words[i]
-
-  //     }
-
-      // for (let j = 0; j < words[i].length; j++) 
-      
-      //   if (j === 0) {
-      //     output += words[0].toUpperCase();
-      //   } else {
-      //     output += words[j];
-      //   }
-      // }}}
-
 
 
 assert.strictEqual(typeof capitalizeFirstLetters, "function");
