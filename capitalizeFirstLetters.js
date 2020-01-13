@@ -7,3 +7,4 @@ function capitalizeFirstLetters(input) {
 }
 
 module.exports = capitalizeFirstLetters;
+
